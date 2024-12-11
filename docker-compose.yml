@@ -1,0 +1,8 @@
+services:
+  browserless:
+    image: browserless/chrome
+    container_name: browserless
+    ports:
+      - "3000:3000"
+    environment:
+      DEFAULT_IGNORE_HTTPS_ERRORS: "true"
